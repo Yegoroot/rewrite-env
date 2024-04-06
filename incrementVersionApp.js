@@ -6,7 +6,7 @@ const p = require('path')
 const fs = require('fs')
 const wtf = require('./writeEnvToFile')
 
-const configPath = p.resolve(__dirname, './../src/metadata.json')
+const configPath = p.resolve(__dirname, './metadata.json')
 
 console.log('Incrementing build number...')
 fs.readFile(configPath, (err, content) => {
